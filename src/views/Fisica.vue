@@ -1,7 +1,52 @@
 <template>
-    <v-app>
-        <CardView />
-    </v-app>
+  <v-main v-if="dadosProfissionais">
+    <CardView 
+      :imagem="dadosProfissionais[0].imagem"
+      :nome="dadosProfissionais[0].nome"
+      :servicos="dadosProfissionais[0].servicos"
+    />
+     <CardView 
+      :imagem="dadosProfissionais[2].imagem"
+      :nome="dadosProfissionais[2].nome"
+      :servicos="dadosProfissionais[2].servicos"
+    />
+
+     <CardView 
+      :imagem="dadosProfissionais[1].imagem"
+      :nome="dadosProfissionais[1].nome"
+      :servicos="dadosProfissionais[1].servicos"
+    />
+
+     <CardView 
+      :imagem="dadosProfissionais[5].imagem"
+      :nome="dadosProfissionais[5].nome"
+      :servicos="dadosProfissionais[5].servicos"
+    />
+
+     <CardView 
+      :imagem="dadosProfissionais[6].imagem"
+      :nome="dadosProfissionais[6].nome"
+      :servicos="dadosProfissionais[6].servicos"
+    />
+
+     <CardView 
+      :imagem="dadosProfissionais[7].imagem"
+      :nome="dadosProfissionais[7].nome"
+      :servicos="dadosProfissionais[7].servicos"
+    />
+
+     <CardView 
+      :imagem="dadosProfissionais[8].imagem"
+      :nome="dadosProfissionais[8].nome"
+      :servicos="dadosProfissionais[8].servicos"
+    />
+
+     <CardView 
+      :imagem="dadosProfissionais[9].imagem"
+      :nome="dadosProfissionais[9].nome"
+      :servicos="dadosProfissionais[9].servicos"
+    />
+  </v-main>
 </template>
 
 <script>
@@ -11,6 +56,9 @@ export default {
   async mounted() {
     this.dadosProfissionais = await this.getData();
     console.log(this.dadosProfissionais);
+  },
+  components: {
+    CardView
   },
   methods: {
     async getData() {
@@ -24,9 +72,7 @@ export default {
     },
   },
 
-  components: {
-    CardView
-  },
+  
 
 
   data() {

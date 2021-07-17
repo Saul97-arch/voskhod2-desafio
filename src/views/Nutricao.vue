@@ -1,15 +1,24 @@
 <template>
-    <v-app>
-        <h1>Nutrição</h1>
-    </v-app>
+  <v-main v-if="dadosProfissionais">
+     <CardView 
+      :imagem="dadosProfissionais[3].imagem"
+      :nome="dadosProfissionais[3].nome"
+      :servicos="dadosProfissionais[3].servicos"
+    />
+  </v-main>
 </template>
 
 
 <script>
+import CardView from "../components/CardView.vue";
+
 export default {
   async mounted() {
     this.dadosProfissionais = await this.getData();
     console.log(this.dadosProfissionais);
+  },
+  components: {
+    CardView
   },
   methods: {
     async getData() {
