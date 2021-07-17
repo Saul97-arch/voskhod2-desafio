@@ -8,7 +8,7 @@
       ></v-progress-linear>
     </template>
 
-    <v-img class="imagem-profissional" :src="imagem"></v-img>
+    <v-img v-if="imagem" class="imagem-profissional" :src="imagem"></v-img>
 
     <v-card-title>{{ nome }}</v-card-title>
 
@@ -106,5 +106,9 @@ export default {
 <style scoped>
 .detalhe-card {
   padding-top: 15px;
+}
+
+.v-card {
+  background-color: #000;
 }
 </style>

@@ -1,6 +1,6 @@
 <template>
   <v-main v-if="dadosProfissionais">
-    <CardView 
+    <CardView  
       :imagem="dadosProfissionais[0].imagem"
       :nome="dadosProfissionais[0].nome"
       :servicos="dadosProfissionais[0].servicos"
