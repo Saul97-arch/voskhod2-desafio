@@ -9,7 +9,7 @@
     </template>
 
     <v-img
-      height="250"
+      class="imagem-profissional"
       src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
     ></v-img>
 
@@ -37,10 +37,7 @@
     <v-card-title>Agende a sua visita</v-card-title>
 
     <v-card-text>
-      <v-chip-group
-        active-class="deep-green accent-2 green--text"
-        column
-      >
+      <v-chip-group active-class="deep-purple accent-4 white--text" column>
         <v-chip>Segunda</v-chip>
 
         <v-chip>Terça</v-chip>
@@ -54,10 +51,7 @@
     </v-card-text>
 
     <v-card-text>
-      <v-chip-group
-        active-class="deep-purple accent-4 white--text"
-        column
-      >
+      <v-chip-group active-class="deep-purple accent-4 white--text" column>
         <v-chip>5:30PM</v-chip>
 
         <v-chip>7:30PM</v-chip>
