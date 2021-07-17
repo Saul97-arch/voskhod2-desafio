@@ -26,7 +26,7 @@
         <div class="grey--text ms-4">4.5 (413)</div>
       </v-row>
 
-      <div class="detalhe-card" v-for="servico of servicos" :key="servico.index">{{servicos}}</div>
+      <div class="detalhe-card" v-for="servico of servicos" :key="servico.servicos">{{servico}}</div>
     </v-card-text>
 
     <v-divider class="mx-4"></v-divider>
