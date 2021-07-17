@@ -1,18 +1,18 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import Entreterimento from "../views/entreterimento.vue";
-import Fisica from "../views/fisica.vue";
-import Mental from "../views/mental.vue";
-import Nutricao from "../views/nutricao.vue";
+import Entretenimento from "../views/Entretenimento.vue";
+import Fisica from "../views/Fisica.vue";
+import Mental from "../views/Mental.vue";
+import Nutricao from "../views/Nutricao.vue";
 import Home from "../views/Home.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
-    path: "/entreterimento",
-    name: "Entreterimento",
-    component: Entreterimento,
+    path: "/entretenimento",
+    name: "Entretenimento",
+    component: Entretenimento,
   },
   {
     path: "/saude-fisica",
