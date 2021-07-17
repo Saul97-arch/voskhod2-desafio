@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   version="1.1"
+   id="svg9"
+   width="180"
+   height="303"
+   viewBox="0 0 180 303"
+   sodipodi:docname="logo-fonte.svg"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs13">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath3871">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 87.599038,69.227885 v 0 l -4.624289,-1.044477 v 0 0 l -2.068394,-4.786164 -0.25251,-9.403975 5.600962,-4.480769 3.360578,-7.169231 5.376923,-6.721153 9.409622,-4.480769 8.96153,-2.016347 6.27308,1.344231 7.16923,3.136538 4.92885,3.584616 4.92884,5.376923 2.68846,4.928846 2.24039,-0.448077 4.03269,4.480769 0.89615,8.513462 -3.13653,4.480769 -3.13654,0.448077 -2.68846,6.721154 -3.13654,4.480769 7.16923,-3.584615 1.79231,-6.721154 3.58461,-0.896154 2.68846,2.688461 3.58462,-3.584615 h 3.13654 l 3.13653,3.584615 0.89616,5.376923 -0.44808,4.48077 -2.24038,3.584615 -2.68846,3.584615 -6.72116,4.48077 -4.48077,2.240384 -6.72115,2.240385 -7.61731,1.344231 L 116.5,94.096154 99.025,91.855769 94.544231,89.391346 90.735576,86.926923 93.648077,80.653846 93.2,77.965385 89.615385,73.484615 Z"
+         id="path3873"
+         sodipodi:nodetypes="ccccccccccccccccccccccccccccccccccccccccccccccc" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     id="namedview11"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     inkscape:zoom="1.640264"
+     inkscape:cx="89.924549"
+     inkscape:cy="151.5"
+     inkscape:window-width="1360"
+     inkscape:window-height="705"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g15" />
+  <g
+     inkscape:groupmode="layer"
+     inkscape:label="Image"
+     id="g15">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.7993px;line-height:1.25;font-family:'Gill Sans Ultra Bold';-inkscape-font-specification:'Gill Sans Ultra Bold, ';fill:#e7c22f;fill-opacity:1;stroke:none;stroke-width:0.740595"
+       x="27.112965"
+       y="159.96101"
+       id="text1027"
+       transform="matrix(0.98306087,-3.4449933e-4,3.329272e-4,1.0172309,0,0)"><tspan
+         sodipodi:role="line"
+         x="27.112965"
+         y="159.96101"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:15.7993px;font-family:'Gill Sans Ultra Bold';-inkscape-font-specification:'Gill Sans Ultra Bold, ';fill:#e7c22f;fill-opacity:1;stroke-width:0.740595"
+         id="tspan20831">voskhod-bem</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.89965px;line-height:1.25;font-family:'Gill Sans MT';-inkscape-font-specification:'Gill Sans MT';fill:#e7c22f;fill-opacity:1;stroke:none;stroke-width:0.370298"
+       x="30.227631"
+       y="166.44826"
+       id="text1027-2"
+       transform="matrix(0.98306087,-3.4449933e-4,3.329272e-4,1.0172309,0,0)"><tspan
+         sodipodi:role="line"
+         x="30.227631"
+         y="166.44826"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.89965px;font-family:'Gill Sans MT';-inkscape-font-specification:'Gill Sans MT';fill:#e7c22f;fill-opacity:1;stroke-width:0.370298"
+         id="tspan20831-3">e-levando saúde a níveis estratisféricos</tspan></text>
+  </g>
+</svg>
