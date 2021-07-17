@@ -1,46 +1,45 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import Entreterimento from '../views/entreterimento.vue'
-import Fisica from '../views/fisica.vue'
-import Mental from '../views/mental.vue'
-import Nutricao from '../views/nutricao.vue'
-import Home from '../views/Home.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import Entreterimento from "../views/entreterimento.vue";
+import Fisica from "../views/fisica.vue";
+import Mental from "../views/mental.vue";
+import Nutricao from "../views/nutricao.vue";
+import Home from "../views/Home.vue";
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/entreterimento',
-    name: 'Entreterimento',
-    component: Entreterimento
+    path: "/entreterimento",
+    name: "Entreterimento",
+    component: Entreterimento,
   },
   {
-    path: '/saude-fisica',
-    name: 'Fisica',
-    component: Fisica
+    path: "/saude-fisica",
+    name: "Fisica",
+    component: Fisica,
   },
   {
-    path: '/saude-mental',
-    name: 'Mental',
-    component: Mental
+    path: "/saude-mental",
+    name: "Mental",
+    component: Mental,
   },
   {
-    path: '/nutricao',
-    name: 'Nutricao',
-    component: Nutricao
-  }
-  ,
+    path: "/nutricao",
+    name: "Nutricao",
+    component: Nutricao,
+  },
   {
-    path: '/',
-    name: 'Home',
-    component: Home
-  }
-]
+    path: "/",
+    name: "Home",
+    component: Home,
+  },
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

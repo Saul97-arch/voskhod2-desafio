@@ -1,24 +1,41 @@
 <template>
-    <v-app>
+  <v-app>
     <CardView />
     <v-main>
-      <router-view/>
+      <router-view />
     </v-main>
   </v-app>
 </template>
 
 <script>
-import  CardView  from './components/CardView.vue'
+import CardView from "./components/CardView.vue";
 
-export default({
-  name:'App',
+export default {
+  name: "App",
   components: {
-    CardView
+    CardView,
   },
-  setup() {
-    
+  async mounted() {
+    this.dadosProfissionais = await this.getData();
+    console.log(this.dadosProfissionais);
   },
-})
+  methods: {
+    async getData() {
+      const response = await fetch(
+        "https://it3-gdf-default-rtdb.firebaseio.com/saude/profissionais.json"
+      );
+
+      const data = await response.json();
+
+      return data;
+    },
+  },
+  data() {
+    return {
+      dadosProfissionais: [],
+    };
+  },
+};
 </script>
 
 
