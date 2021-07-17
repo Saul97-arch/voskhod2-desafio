@@ -1,12 +1,12 @@
 <template>
     <div class="app-top-bar">
-        <v-app-bar color="blue darken-4" app dark>
+        <v-app-bar color="blue darken-4" dark>
             <img @click="drawer = true" class="logo" :src="logo" alt="Logo" />
 
             <img :src="fonte" alt="Voshkod-Bem" />
         </v-app-bar>
 
-        <v-navigation-drawer v-model="drawer" class="nav-side-bar" absolute temporary>
+        <v-navigation-drawer v-model="drawer" class="nav-side-bar" absolute temporary app>
             <v-list nav dense>
                 <v-list-item-group v-model="group" active-class="blue darken-4">
                     <router-link to="/">
