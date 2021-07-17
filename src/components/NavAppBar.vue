@@ -3,7 +3,7 @@
         <v-app-bar color="blue darken-4" dark>
             <img @click="drawer = true" class="logo" :src="logo" alt="Logo" />
 
-            <img :src="fonte" class="fonte" alt="Voshkod-Bem" />
+            <img @click="drawer = true" :src="fonte" class="fonte" alt="Voshkod-Bem" />
         </v-app-bar>
 
         <v-navigation-drawer v-model="drawer" class="nav-side-bar" absolute temporary app>
@@ -83,7 +83,7 @@ export default {
 
 <style scoped>
 .logo {
-    height: 50px;
+    height: 40px;
 }
 .fonte {
     width: 300px;
