@@ -1,11 +1,26 @@
 <template>
     <v-app>
-    <!-- Aqui vai component navbar -->
+    <CardView />
     <v-main>
       <router-view/>
     </v-main>
   </v-app>
 </template>
+
+<script>
+import  CardView  from './components/CardView.vue'
+
+export default({
+  name:'App',
+  components: {
+    CardView
+  },
+  setup() {
+    
+  },
+})
+</script>
+
 
 <style lang="scss">
 #app {
