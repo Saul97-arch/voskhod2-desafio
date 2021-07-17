@@ -1,6 +1,28 @@
 <template>
   <v-main v-if="dadosProfissionais">
-    <CardView :nome="dadosProfissionais[0].nome" />
+    <CardView 
+      :imagem="dadosProfissionais[0].imagem"
+      :nome="dadosProfissionais[0].nome"
+      :servicos="dadosProfissionais[0].servicos"
+    />
+
+    <CardView 
+      :imagem="dadosProfissionais[5].imagem"
+      :nome="dadosProfissionais[5].nome"
+      :servicos="dadosProfissionais[5 ].servicos"
+    />
+
+    <CardView 
+      :imagem="dadosProfissionais[6].imagem"
+      :nome="dadosProfissionais[6].nome"
+      :servicos="dadosProfissionais[6].servicos"
+    />
+
+    <CardView 
+      :imagem="dadosProfissionais[8].imagem"
+      :nome="dadosProfissionais[8].nome"
+      :servicos="dadosProfissionais[8].servicos"
+    />
   </v-main>
 </template>
 
@@ -29,7 +51,7 @@ export default {
   data() {
     return {
       dadosProfissionais: [],
-      nome: "Randolfo",
+      
     };
   },
 };
