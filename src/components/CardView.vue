@@ -11,11 +11,14 @@
         indeterminate
       ></v-progress-linear>
     </template>
+   
 
-    <v-img
-      height="250"
+    <v-img class="imagem-profissional"
+      
+   
       src="https://cdn.vuetifyjs.com/images/cards/cooking.png"
     ></v-img>
+    
 
     <v-card-title>Nome</v-card-title>
 
@@ -49,8 +52,8 @@
 
     <v-card-text>
       <v-chip-group
-        v-model="selection"
-        active-class="deep-green accent-2 green--text"
+        
+        active-class="deep-purple accent-4 white--text" 
         column
       >
         <v-chip>Segunda</v-chip>
@@ -67,8 +70,8 @@
 
     <v-card-text>
       <v-chip-group
-        v-model="selection"
-        active-class="deep-purple accent-4 white--text"
+       
+        active-class="deep-purple accent-4 white--text" 
         column
       >
         <v-chip>5:30PM</v-chip>
@@ -98,7 +101,6 @@
     name: 'CardView',
     data: () => ({
       loading: false,
-      selection: 1,
     }),
 
     methods: {
