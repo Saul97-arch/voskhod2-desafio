@@ -4,6 +4,7 @@ import Entreterimento from '../views/entreterimento.vue'
 import Fisica from '../views/fisica.vue'
 import Mental from '../views/mental.vue'
 import Nutricao from '../views/nutricao.vue'
+import Home from '../views/Home.vue'
 
 Vue.use(VueRouter)
 
@@ -27,6 +28,12 @@ const routes = [
     path: '/nutricao',
     name: 'Nutricao',
     component: Nutricao
+  }
+  ,
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
   }
 ]
 
