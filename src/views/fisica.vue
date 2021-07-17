@@ -1,10 +1,12 @@
 <template>
     <v-app>
-        <h1>Fisica</h1>
+        <CardView />
     </v-app>
 </template>
 
 <script>
+import CardView from '../components/CardView.vue'
+
 export default {
   async mounted() {
     this.dadosProfissionais = await this.getData();
@@ -21,6 +23,12 @@ export default {
       return data;
     },
   },
+
+  components: {
+    CardView
+  },
+
+
   data() {
     return {
       dadosProfissionais: [],

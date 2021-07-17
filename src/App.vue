@@ -9,11 +9,11 @@
 
 <script>
 import NavAppBar from "./components/NavAppBar.vue";
-
 export default {
   name: "App",
   components: {
     NavAppBar,
+    
   },
   async mounted() {
     this.dadosProfissionais = await this.getData();

@@ -6,6 +6,7 @@
 
 <script>
 export default {
+  name:'Mental',
   async mounted() {
     this.dadosProfissionais = await this.getData();
     console.log(this.dadosProfissionais);
