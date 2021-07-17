@@ -1,13 +1,11 @@
 <template>
-    <v-main v-if="dadosProfissionais">
-        <CardView :nome="dadosProfissionais[0].nome"/>
-
-    </v-main>
+  <v-main v-if="dadosProfissionais">
+    <CardView :nome="dadosProfissionais[0].nome" />
+  </v-main>
 </template>
 
 <script>
-
-import CardView from '../components/CardView.vue'
+import CardView from "../components/CardView.vue";
 
 export default {
   async mounted() {
@@ -15,7 +13,7 @@ export default {
     console.log(this.dadosProfissionais);
   },
   components: {
-    CardView
+    CardView,
   },
   methods: {
     async getData() {
@@ -31,6 +29,7 @@ export default {
   data() {
     return {
       dadosProfissionais: [],
+      nome: "Randolfo",
     };
   },
 };

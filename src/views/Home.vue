@@ -1,26 +1,27 @@
 <template>
   <div>
-    <p>Esse momento pode ter diversos impactos negativos na qualidade de vida das pessoas. 
-Afinal, isso pode fazer com que elas se sintam mais cansadas, tenham uma queda de produtividade no trabalho ,
-prejudiquem sua saúde física e mental.
-
-E nós da Voskhod estamos aqui para poder proporcionar para você, com a ajuda de nossos melhores profissionais, 
-consultas individuais para o seu melhor desempenho fisíco e mental. 
-
-Clique já e aproveite!</p>
-<Carrossel/>
+    <p>
+      Esse momento pode ter diversos impactos negativos na qualidade de vida das
+      pessoas. Afinal, isso pode fazer com que elas se sintam mais cansadas,
+      tenham uma queda de produtividade no trabalho , prejudiquem sua saúde
+      física e mental. E nós da Voskhod estamos aqui para poder proporcionar
+      para você, com a ajuda de nossos melhores profissionais, consultas
+      individuais para o seu melhor desempenho fisíco e mental. Clique já e
+      aproveite!
+    </p>
+    <Carrossel />
   </div>
 </template>
 
 <script>
-import Carrossel from '../components/Carossel.vue'
+import Carrossel from "../components/Carossel.vue";
 export default {
   async mounted() {
     this.dadosProfissionais = await this.getData();
     console.log(this.dadosProfissionais);
   },
   components: {
-    Carrossel
+    Carrossel,
   },
   methods: {
     async getData() {

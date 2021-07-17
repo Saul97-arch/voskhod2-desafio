@@ -8,12 +8,9 @@
       ></v-progress-linear>
     </template>
 
-    <v-img
-      class="imagem-profissional"
-      :src="imagem"
-    ></v-img>
+    <v-img class="imagem-profissional" :src="imagem"></v-img>
 
-    <v-card-title>{{nome}}</v-card-title>
+    <v-card-title>{{ nome }}</v-card-title>
 
     <v-card-text>
       <v-row align="center" class="mx-0">
@@ -29,7 +26,7 @@
         <div class="grey--text ms-4">4.5 (413)</div>
       </v-row>
 
-      <div class="detalhe-card">{{servicos}}</div>
+      <div class="detalhe-card">{{ servicos }}</div>
     </v-card-text>
 
     <v-divider class="mx-4"></v-divider>
@@ -71,8 +68,6 @@
 </template>
 
 <script>
-
-
 export default {
   name: "CardView",
   data: () => ({
@@ -85,31 +80,24 @@ export default {
 
       setTimeout(() => (this.loading = false), 2000);
     },
-
-    props: {
-        imagem: {
-            type: String,
-            
-            
-        },
-        local: {
-            type: String,
-           
-        },
-        nome: {
-            type: String,
-            
-        },
-        servicos: {
-            type:[],
-           
-        },
-        signo: {
-            type: String,
-           
-        }
-
-    }
+  },
+  
+  props: {
+    imagem: {
+      type: String,
+    },
+    local: {
+      type: String,
+    },
+    nome: {
+      type: String,
+    },
+    servicos: {
+      type: [],
+    },
+    signo: {
+      type: String,
+    },
   },
 };
 </script>
