@@ -3,7 +3,7 @@
         <v-app-bar color="blue darken-4" app dark>
             <img @click="drawer = true" class="logo" :src="logo" alt="Logo" />
 
-            <img :src="fonte" alt="Voshkod-Bem" />
+            <img :src="fonte" class="fonte" alt="Voshkod-Bem" />
         </v-app-bar>
 
         <v-navigation-drawer v-model="drawer" class="nav-side-bar" absolute temporary>
@@ -57,8 +57,8 @@
 </template>
 
 <script>
-import Logo from "../assets/imagens/logo.svg";
-import Fonte from "../assets/imagens/logo-fonte.svg";
+import Logo from "../assets/imagens/logo.png";
+import Fonte from "../assets/imagens/logo-fonte.png";
 import Home from "../assets/imagens/home.jpg";
 import Entretenimento from "../assets/imagens/entretenimento.jpg";
 import SaudeFisica from "../assets/imagens/saude-fisica.jpg";
@@ -84,6 +84,9 @@ export default {
 <style scoped>
 .logo {
     height: 50px;
+}
+.fonte {
+    width: 300px;
 }
 .nav-side-bar img {
     border-radius: 50%;
