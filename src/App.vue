@@ -1,11 +1,10 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
-  </div>
+    <v-app>
+    <!-- Aqui vai component navbar -->
+    <v-main>
+      <router-view/>
+    </v-main>
+  </v-app>
 </template>
 
 <style lang="scss">
