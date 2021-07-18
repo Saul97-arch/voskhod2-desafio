@@ -36,7 +36,6 @@ import CardView from "../components/CardView.vue";
 export default {
     async mounted() {
         this.dadosProfissionais = await this.getData();
-        console.log(this.dadosProfissionais);
     },
     components: {
         CardView,

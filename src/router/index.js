@@ -5,6 +5,7 @@ import Fisica from "../views/Fisica.vue";
 import Mental from "../views/Mental.vue";
 import Nutricao from "../views/Nutricao.vue";
 import Home from "../views/Home.vue";
+import Sobre from "../views/Sobre.vue"
 
 Vue.use(VueRouter);
 
@@ -34,6 +35,11 @@ const routes = [
     name: "Home",
     component: Home,
   },
+  {
+    path: "/sobre",
+    name: "Sobre",
+    component: Sobre
+  }
 ];
 
 const router = new VueRouter({
