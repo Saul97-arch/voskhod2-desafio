@@ -1,7 +1,15 @@
 <template>
   <div>
     <div v-for="jogo of infoJogos" :key="jogo.id">
-      <CardGame :nome="jogo.nome" :avaliacao="jogo.avaliacao" :imagem="jogo.imagem" :descricao="jogo.descricao" :plataformas="jogo.plataformas" v-if="infoJogos" :site="jogo.site"/>
+      <CardGame
+        :nome="jogo.nome"
+        :avaliacao="jogo.avaliacao"
+        :imagem="jogo.imagem"
+        :descricao="jogo.descricao"
+        :plataformas="jogo.plataformas"
+        v-if="infoJogos"
+        :site="jogo.site"
+      />
     </div>
   </div>
 </template>
@@ -19,7 +27,6 @@ export default {
       .then((response) => response.json())
       .then((json) => {
         this.infoJogos = json;
-        console.log(this.infoJogos);
       });
   },
   methods: {},
