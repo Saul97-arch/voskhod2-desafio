@@ -1,6 +1,6 @@
 <template>
-    <div class="app-top-bar">
-        <v-app-bar color="blue darken-4" dark>
+    <div>
+        <v-app-bar color="blue darken-4" class="app-top-bar" dark>
             <img @click="drawer = true" class="logo" :src="logo" alt="Logo" />
 
             <img @click="drawer = true" :src="fonte" class="fonte" alt="Voshkod-Bem" />
@@ -85,16 +85,20 @@ export default {
 .logo {
     height: 40px;
 }
+
 .fonte {
-    width: 300px;
+    width: 250px;
 }
+
+.nav-side-bar a {
+    text-decoration: none;
+}
+
 .nav-side-bar img {
     border-radius: 50%;
 }
-.app-top-bar {
-    font-family: GillSansUltraBold, sans-serif;
-}
-.app-top-bar a {
-    text-decoration: none;
+
+.app-top-bar img {
+    cursor: pointer;
 }
 </style>
