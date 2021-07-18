@@ -17,7 +17,7 @@ import Danca from "../assets/imagens/carroussel/entretenimento.jpg";
 import Nutricao from "../assets/imagens/carroussel/nutricao.jpg";
 
 export default {
-    name: "Carrosel",
+    name: "Carousel",
     data: () => ({
         model: 0,
         images: [Austronauta, Yoga, Musculacao, Danca, Nutricao],

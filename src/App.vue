@@ -19,7 +19,6 @@ export default {
     },
     async mounted() {
         this.dadosProfissionais = await this.getData();
-        console.log(this.dadosProfissionais);
     },
     methods: {
         async getData() {
