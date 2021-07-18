@@ -1,27 +1,36 @@
 <template>
     <div class="home">
-        <p>
-            Momentos como este podem causar diversos impactos negativos na qualidade de vida das pessoas. Dentre eles,
-            podemos citar o cansaço no dia-a-dia que acarreta em queda de produtividade no trabalho, e pode prejudicar a
-            saúde física e mental.
-        </p>
-        <p>
-            Nós da Voskhod-Bem estamos aqui para poder proporcionar para você, com a ajuda de nossos melhores
-            profissionais, consultas individuais para o seu melhor desempenho fisíco e mental. Conheça já e 'e-leve' sua
-            saúde! :&#41;
-        </p>
-        <Carrossel />
+        <h3>Saúde e entretenimento tudo num mesmo lugar.</h3>
+        <div class="buttons-area">
+            <div>
+                <HomeButton :src="entretenimento" titulo="Entretenimento" path="/entretenimento" />
+                <HomeButton :src="nutricao" titulo="Nutrição" path="/nutricao" />
+            </div>
+            <div>
+                <HomeButton :src="saudeFisica" titulo="Saúde Física" path="/saude-fisica" />
+                <HomeButton :src="saudeMental" titulo="Saúde Mental" path="/saude-mental" />
+            </div>
+        </div>
+        <Carousel />
     </div>
 </template>
 
 <script>
-import Carrossel from "../components/Carossel.vue";
+import Carousel from "../components/Carousel.vue";
+import HomeButton from "../components/HomeButton.vue";
+
+import Nutricao from "../assets/imagens/button/nutricao.jpg";
+import Entretenimento from "../assets/imagens/button/entretenimento.jpg";
+import SaudeFisica from "../assets/imagens/button/saude-fisica.jpg";
+import SaudeMental from "../assets/imagens/button/saude-mental.jpg";
+
 export default {
     async mounted() {
         this.dadosProfissionais = await this.getData();
     },
     components: {
-        Carrossel,
+        Carousel,
+        HomeButton,
     },
     methods: {
         async getData() {
@@ -35,7 +44,19 @@ export default {
     data() {
         return {
             dadosProfissionais: [],
+            entretenimento: Entretenimento,
+            nutricao: Nutricao,
+            saudeFisica: SaudeFisica,
+            saudeMental: SaudeMental,
         };
     },
 };
 </script>
+
+<style scoped>
+.buttons-area {
+    display: flex;
+    margin: 15px 0px 15px 0px;
+    justify-content: center;
+}
+</style>

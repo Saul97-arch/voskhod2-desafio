@@ -50,6 +50,14 @@
                             <v-list-item-title>Saúde Mental</v-list-item-title>
                         </v-list-item>
                     </router-link>
+                    <router-link to="/sobre">
+                        <v-list-item>
+                            <v-avatar size="24">
+                                <img :src="sobre" alt="Sobre" />
+                            </v-avatar>
+                            <v-list-item-title>Sobre</v-list-item-title>
+                        </v-list-item>
+                    </router-link>
                 </v-list-item-group>
             </v-list>
         </v-navigation-drawer>
@@ -64,6 +72,7 @@ import Entretenimento from "../assets/imagens/entretenimento.jpg";
 import SaudeFisica from "../assets/imagens/saude-fisica.jpg";
 import SaudeMental from "../assets/imagens/saude-mental.jpg";
 import Nutricao from "../assets/imagens/nutricao.jpg";
+import Sobre from "../assets/imagens/sobre.jpg";
 
 export default {
     name: "AppTopBar",
@@ -75,6 +84,7 @@ export default {
         saudeFisica: SaudeFisica,
         saudeMental: SaudeMental,
         nutricao: Nutricao,
+        sobre: Sobre,
         drawer: false,
         group: null,
     }),
