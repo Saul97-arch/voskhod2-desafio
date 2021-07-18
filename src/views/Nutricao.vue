@@ -7,6 +7,8 @@
                 :imagem="dadosProfissionais[3].imagem"
                 :nome="dadosProfissionais[3].nome"
                 :servicos="dadosProfissionais[3].servicos"
+                :local="dadosProfissionais[3].local"
+
             />
         </div>
     </div>

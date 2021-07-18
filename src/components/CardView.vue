@@ -33,6 +33,9 @@
 
     <v-card-title>Agende a sua visita</v-card-title>
 
+    <v-card-text>{{local}}</v-card-text>
+
+
     <v-card-text>
       <v-chip-group active-class="deep-purple accent-4 white--text" column>
         <v-chip>Segunda</v-chip>
