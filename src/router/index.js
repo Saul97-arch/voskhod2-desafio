@@ -5,8 +5,8 @@ import Fisica from "../views/Fisica.vue";
 import Mental from "../views/Mental.vue";
 import Nutricao from "../views/Nutricao.vue";
 import Home from "../views/Home.vue";
-import Sobre from "../views/Sobre.vue"
-
+import Sobre from "../views/Sobre.vue";
+import Jogos from "../views/Jogos.vue";
 Vue.use(VueRouter);
 
 const routes = [
@@ -39,6 +39,11 @@ const routes = [
     path: "/sobre",
     name: "Sobre",
     component: Sobre
+  },
+  {
+    path: "/jogos",
+    name: "Jogos",
+    component: Jogos
   }
 ];
 
