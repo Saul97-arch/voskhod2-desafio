@@ -1,5 +1,11 @@
 <template>
-  <v-card :loading="loading" class="mx-auto my-12" max-width="374">
+
+  <v-card :loading="loading" class="mx-auto my-12"  max-width="374">
+    <v-parallax
+    height="100vh"
+    dark
+    src="https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg"
+  >
     <template slot="progress">
       <v-progress-linear
         color="deep-purple"
@@ -7,7 +13,6 @@
         indeterminate
       ></v-progress-linear>
     </template>
-
     <v-img v-if="imagem" class="imagem-profissional" :src="imagem"></v-img>
 
     <v-card-title>{{ nome }}</v-card-title>
@@ -28,7 +33,7 @@
         </div>
       </v-row>
       <div
-        class="detalhe-card red lighten-5"
+        class="detalhe-card white--text ms-1"
         v-for="plataforma of plataformas"
         :key="plataformas[plataforma]"
       >
@@ -38,18 +43,22 @@
 
     <v-divider class="mx-4"></v-divider>
 
-    <v-card-title class="nome">{{ nome }}</v-card-title>
 
-    <v-card-text>
-      <v-chip-group class="red lighten-5" column>
+
+    <v-card-text class="card-text">
+      <v-chip-group class="white--text ms-1 " column>
         Site <a :href="site">{{ site }}</a>
       </v-chip-group>
     </v-card-text>
 
-    <v-card-text class="red lighten-5">
+    <v-card-text class="white--text ms-1">
       {{ descricao }}
     </v-card-text>
+  
+</v-parallax>
+
   </v-card>
+  
 </template>
 
 <script>
@@ -95,11 +104,17 @@ export default {
   padding-top: 15px;
 }
 
-.v-card {
-  background-color: #000;
-}
+
 
 .nome {
   color: #fff;
+}
+
+.card-text{
+  border-radius:100%
+}
+
+.imagem-profissional {
+  margin-top: 10px;
 }
 </style>

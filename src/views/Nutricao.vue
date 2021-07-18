@@ -4,9 +4,12 @@
 
         <div v-if="dadosProfissionais">
             <CardView
+                v-if="dadosProfissionais[3]"
                 :imagem="dadosProfissionais[3].imagem"
                 :nome="dadosProfissionais[3].nome"
                 :servicos="dadosProfissionais[3].servicos"
+                :local="dadosProfissionais[3].local"
+
             />
         </div>
     </div>
@@ -18,7 +21,6 @@ import CardView from "../components/CardView.vue";
 export default {
     async mounted() {
         this.dadosProfissionais = await this.getData();
-        console.log(this.dadosProfissionais);
     },
     components: {
         CardView,

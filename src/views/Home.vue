@@ -27,7 +27,6 @@ import SaudeMental from "../assets/imagens/button/saude-mental.jpg";
 export default {
     async mounted() {
         this.dadosProfissionais = await this.getData();
-        console.log(this.dadosProfissionais);
     },
     components: {
         Carousel,

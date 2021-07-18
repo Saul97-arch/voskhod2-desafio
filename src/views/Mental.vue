@@ -4,20 +4,29 @@
 
         <div v-if="dadosProfissionais">
             <CardView
+                v-if="dadosProfissionais[1]"
                 :imagem="dadosProfissionais[1].imagem"
                 :nome="dadosProfissionais[1].nome"
                 :servicos="dadosProfissionais[1].servicos"
+                :local="dadosProfissionais[1].local"
+
             />
             <CardView
+                v-if="dadosProfissionais[4]"
                 :imagem="dadosProfissionais[4].imagem"
                 :nome="dadosProfissionais[4].nome"
                 :servicos="dadosProfissionais[4].servicos"
+                :local="dadosProfissionais[4].local"
+
             />
 
             <CardView
+                v-if="dadosProfissionais[7]"
                 :imagem="dadosProfissionais[7].imagem"
                 :nome="dadosProfissionais[7].nome"
                 :servicos="dadosProfissionais[7].servicos"
+                :local="dadosProfissionais[7].local"
+
             />
         </div>
     </div>
@@ -30,7 +39,6 @@ export default {
     name: "Mental",
     async mounted() {
         this.dadosProfissionais = await this.getData();
-        console.log(this.dadosProfissionais);
     },
     components: {
         CardView,

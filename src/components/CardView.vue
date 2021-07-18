@@ -26,12 +26,15 @@
         <div class="grey--text ms-4">4.5 (413)</div>
       </v-row>
 
-      <div class="detalhe-card" v-for="servico of servicos" :key="servico.servicos">{{servico}}</div>
+      <div class="detalhe-card" v-for="servico of servicos" :key="servico">{{servico}}</div>
     </v-card-text>
 
     <v-divider class="mx-4"></v-divider>
 
     <v-card-title>Agende a sua visita</v-card-title>
+
+    <v-card-text>{{local}}</v-card-text>
+
 
     <v-card-text>
       <v-chip-group active-class="deep-purple accent-4 white--text" column>
