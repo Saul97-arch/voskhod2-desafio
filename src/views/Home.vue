@@ -57,6 +57,7 @@ export default {
 <style scoped>
 .buttons-area {
     display: flex;
-    margin: 15px;
+    margin: 15px 0px 15px 0px;
+    justify-content: center;
 }
 </style>
