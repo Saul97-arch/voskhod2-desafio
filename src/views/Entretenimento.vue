@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="entretenimento">
         <h1>Entretenimento</h1>
 
         <div v-if="dadosProfissionais">
