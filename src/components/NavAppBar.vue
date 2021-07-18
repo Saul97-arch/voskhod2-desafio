@@ -26,6 +26,16 @@
                             <v-list-item-title>Entretenimento</v-list-item-title>
                         </v-list-item>
                     </router-link>
+
+                    <router-link to="/jogos">
+                        <v-list-item>
+                            <v-avatar size="24">
+                                <img :src="jogos" alt="Jogos" />
+                            </v-avatar>
+                            <v-list-item-title>Jogos</v-list-item-title>
+                        </v-list-item>
+                    </router-link>
+
                     <router-link to="/nutricao">
                         <v-list-item>
                             <v-avatar size="24">
@@ -34,6 +44,7 @@
                             <v-list-item-title>Nutrição</v-list-item-title>
                         </v-list-item>
                     </router-link>
+
                     <router-link to="/saude-fisica">
                         <v-list-item>
                             <v-avatar size="24">
@@ -42,6 +53,7 @@
                             <v-list-item-title>Saúde Física</v-list-item-title>
                         </v-list-item>
                     </router-link>
+
                     <router-link to="/saude-mental">
                         <v-list-item>
                             <v-avatar size="24">
@@ -50,6 +62,7 @@
                             <v-list-item-title>Saúde Mental</v-list-item-title>
                         </v-list-item>
                     </router-link>
+
                     <router-link to="/sobre">
                         <v-list-item>
                             <v-avatar size="24">
@@ -69,6 +82,7 @@ import Logo from "../assets/imagens/logo.png";
 import Fonte from "../assets/imagens/logo-fonte.png";
 import Home from "../assets/imagens/home.jpg";
 import Entretenimento from "../assets/imagens/entretenimento.jpg";
+import Jogos from "../assets/imagens/jogos.jpg";
 import SaudeFisica from "../assets/imagens/saude-fisica.jpg";
 import SaudeMental from "../assets/imagens/saude-mental.jpg";
 import Nutricao from "../assets/imagens/nutricao.jpg";
@@ -81,6 +95,7 @@ export default {
         fonte: Fonte,
         home: Home,
         entretenimento: Entretenimento,
+        jogos: Jogos,
         saudeFisica: SaudeFisica,
         saudeMental: SaudeMental,
         nutricao: Nutricao,
