@@ -1,14 +1,17 @@
 <template>
     <v-app>
         <NavAppBar />
-        <v-main style="padding: 10px; text-align: justify">
-            <router-view />
+        <v-main>
+            <div class="container">
+                <router-view />
+            </div>
         </v-main>
     </v-app>
 </template>
 
 <script>
 import NavAppBar from "./components/NavAppBar.vue";
+
 export default {
     name: "App",
     components: {
@@ -41,19 +44,30 @@ export default {
     src: local("GillSansUltraBold"), url(./assets/fonts/GillSansUltraBold/GillSansUltraBold.ttf) format("truetype");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 #app {
     font-family: GillSansUltraBold, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-align: center;
-    color: #2c3e50;
+    background-image: url("./assets/imagens/logo.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
 #app p {
     font-family: Poppins;
     text-align: justify;
+    background-color: rgb(255, 255, 255, 0.5);
+    display: block;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.container {
+    padding: 20px;
 }
 
 #nav {

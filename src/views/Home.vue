@@ -2,12 +2,13 @@
     <div class="home">
         <p>
             Momentos como este podem causar diversos impactos negativos na qualidade de vida das pessoas. Dentre eles,
-            podemos citar: maior cansaço no dia-a-dia, o que acarreta numa queda de produtividade no trabalho, e pode
-            até prejudicar a saúde física e mental.
+            podemos citar o cansaço no dia-a-dia que acarreta em queda de produtividade no trabalho, e pode prejudicar a
+            saúde física e mental.
         </p>
         <p>
-            Nós da Voskhod estamos aqui para poder proporcionar para você, com a ajuda de nossos melhores profissionais,
-            consultas individuais para o seu melhor desempenho fisíco e mental. Conheça já e 'e-leve' sua saúde! :&#41;
+            Nós da Voskhod-Bem estamos aqui para poder proporcionar para você, com a ajuda de nossos melhores
+            profissionais, consultas individuais para o seu melhor desempenho fisíco e mental. Conheça já e 'e-leve' sua
+            saúde! :&#41;
         </p>
         <Carrossel />
     </div>
