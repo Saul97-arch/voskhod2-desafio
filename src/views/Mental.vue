@@ -4,20 +4,20 @@
 
         <div v-if="dadosProfissionais">
             <CardView
-                :v-if="dadosProfissionais[1]"
+                v-if="dadosProfissionais[1]"
                 :imagem="dadosProfissionais[1].imagem"
                 :nome="dadosProfissionais[1].nome"
                 :servicos="dadosProfissionais[1].servicos"
             />
             <CardView
-                :v-if="dadosProfissionais[4]"
+                v-if="dadosProfissionais[4]"
                 :imagem="dadosProfissionais[4].imagem"
                 :nome="dadosProfissionais[4].nome"
                 :servicos="dadosProfissionais[4].servicos"
             />
 
             <CardView
-                :v-if="dadosProfissionais[7]"
+                v-if="dadosProfissionais[7]"
                 :imagem="dadosProfissionais[7].imagem"
                 :nome="dadosProfissionais[7].nome"
                 :servicos="dadosProfissionais[7].servicos"
