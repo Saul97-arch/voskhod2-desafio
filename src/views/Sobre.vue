@@ -13,3 +13,12 @@
         </p>
     </div>
 </template>
+
+<style scoped>
+h1 {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 3px;
+    margin: 5px;
+    border-radius: 7px;
+}
+</style>

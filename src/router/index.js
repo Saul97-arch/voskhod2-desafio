@@ -6,6 +6,7 @@ import Mental from "../views/Mental.vue";
 import Nutricao from "../views/Nutricao.vue";
 import Home from "../views/Home.vue";
 import Sobre from "../views/Sobre.vue";
+import FaleConosco from "../views/FaleConosco.vue";
 import Jogos from "../views/Jogos.vue";
 
 Vue.use(VueRouter);
@@ -40,6 +41,11 @@ const routes = [
         path: "/sobre",
         name: "Sobre",
         component: Sobre,
+    },
+    {
+        path: "/fale-conosco",
+        name: "FaleConosco",
+        component: FaleConosco,
     },
     {
         path: "/jogos",
