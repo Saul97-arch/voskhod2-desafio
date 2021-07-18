@@ -1,6 +1,6 @@
 <template>
     <div class="home">
-        <h3>Saúde e entretenimento tudo num mesmo lugar.</h3>
+        <h3>Saúde e entretenimento tudo num mesmo lugar!</h3>
         <div class="buttons-area">
             <div>
                 <HomeButton :src="entretenimento" titulo="Entretenimento" path="/entretenimento" />
@@ -62,10 +62,18 @@ export default {
 </script>
 
 <style scoped>
+h3 {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 5px;
+    border-radius: 7px;
+}
 .buttons-area {
+    background-color: rgb(255, 255, 255, 0.5);
     display: flex;
+    width: 100%;
     flex-direction: column;
     margin: 15px 0px 15px 0px;
+    align-items: center;
     justify-content: center;
 }
 .buttons-area div {

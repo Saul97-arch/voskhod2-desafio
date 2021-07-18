@@ -23,7 +23,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 10px;
+    margin: 5px;
 }
 h5 {
     position: absolute;
