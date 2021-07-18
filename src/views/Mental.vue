@@ -1,51 +1,61 @@
 <template>
-  <v-main v-if="dadosProfissionais">
-    <CardView 
-      :imagem="dadosProfissionais[1].imagem"
-      :nome="dadosProfissionais[1].nome"
-      :servicos="dadosProfissionais[1].servicos"
-    />
-     <CardView 
-      :imagem="dadosProfissionais[4].imagem"
-      :nome="dadosProfissionais[4].nome"
-      :servicos="dadosProfissionais[4].servicos"
-    />
+    <div>
+        <h1>Saúde Mental</h1>
 
-     <CardView 
-      :imagem="dadosProfissionais[7].imagem"
-      :nome="dadosProfissionais[7].nome"
-      :servicos="dadosProfissionais[7].servicos"
-    />
-  </v-main>
+        <div v-if="dadosProfissionais">
+            <CardView
+                :imagem="dadosProfissionais[1].imagem"
+                :nome="dadosProfissionais[1].nome"
+                :servicos="dadosProfissionais[1].servicos"
+            />
+            <CardView
+                :imagem="dadosProfissionais[4].imagem"
+                :nome="dadosProfissionais[4].nome"
+                :servicos="dadosProfissionais[4].servicos"
+            />
+
+            <CardView
+                :imagem="dadosProfissionais[7].imagem"
+                :nome="dadosProfissionais[7].nome"
+                :servicos="dadosProfissionais[7].servicos"
+            />
+        </div>
+    </div>
 </template>
 
 <script>
 import CardView from "../components/CardView.vue";
 
 export default {
-  name:'Mental',
-  async mounted() {
-    this.dadosProfissionais = await this.getData();
-    console.log(this.dadosProfissionais);
-  },
-  components: {
-    CardView
-  },
-  methods: {
-    async getData() {
-      const response = await fetch(
-        "https://it3-gdf-default-rtdb.firebaseio.com/saude/profissionais.json"
-      );
-
-      const data = await response.json();
-
-      return data;
+    name: "Mental",
+    async mounted() {
+        this.dadosProfissionais = await this.getData();
+        console.log(this.dadosProfissionais);
     },
-  },
-  data() {
-    return {
-      dadosProfissionais: [],
-    };
-  },
+    components: {
+        CardView,
+    },
+    methods: {
+        async getData() {
+            const response = await fetch("https://it3-gdf-default-rtdb.firebaseio.com/saude/profissionais.json");
+
+            const data = await response.json();
+
+            return data;
+        },
+    },
+    data() {
+        return {
+            dadosProfissionais: [],
+        };
+    },
 };
 </script>
+
+<style scoped>
+h1 {
+    background-color: rgb(255, 255, 255, 0.5);
+    padding: 5px;
+    border-radius: 7px;
+}
+</style>
