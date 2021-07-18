@@ -62,9 +62,13 @@ erros existentes na aplicação.
 ## Como rodar o projeto na sua máquina.
 #### 1º
 ```
-npm install
+git clone https://github.com/Saul97-arch/voskhod2-desafio.git
 ```
 #### 2º
+```
+npm install
+```
+#### 3º
 ```
 npm run serve
 ```
