@@ -6,16 +6,19 @@
                 <router-view />
             </div>
         </v-main>
+        <Footer />
     </v-app>
 </template>
 
 <script>
 import NavAppBar from "./components/NavAppBar.vue";
+import Footer from "./components/Footer.vue";
 
 export default {
     name: "App",
     components: {
         NavAppBar,
+        Footer,
     },
     async mounted() {
         this.dadosProfissionais = await this.getData();
